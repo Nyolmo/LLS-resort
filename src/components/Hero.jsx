@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[url('./images/children.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center text-white relative"
+      className="h-screen bg-[url('/images/children.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center text-white relative"
     >
       <div className="bg-black/50 absolute inset-0"></div>
       <motion.div

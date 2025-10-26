@@ -9,13 +9,28 @@ const Contact = () => {
           <input type="text" placeholder="Your Name" className="w-full border rounded-lg p-3" />
           <input type="email" placeholder="Your Email" className="w-full border rounded-lg p-3" />
           <textarea placeholder="Your Message" rows="4" className="w-full border rounded-lg p-3"></textarea>
-          <button className="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition">
-            Send Message
-          </button>
+<button
+  type="button"
+  onClick={() => {
+    const name = document.querySelector('input[placeholder="Your Name"]').value;
+    const email = document.querySelector('input[placeholder="Your Email"]').value;
+    const message = document.querySelector('textarea[placeholder="Your Message"]').value;
+
+    const whatsappNumber = "254746495101"; 
+    const text = encodeURIComponent(
+      `Hello Le'Lesan Resort,%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`
+    );
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+  }}
+  className="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition"
+>
+  Send Message
+</button>
         </form>
         <div>
           <h3 className="font-semibold mb-2">Find Us:</h3>
-          <p>Behind Chepkoyva Primary School, Kesses</p>
+          <p>Behind Chepkoiyo Primary School, Kesses</p>
           <p>📞 0746 495101 | 0704 088774 | 0727 553838</p>
           <iframe
             src="https://www.google.com/maps?q=Chepkoyva+Primary+School+Kesses&output=embed"

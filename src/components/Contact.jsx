@@ -18,7 +18,7 @@ const Contact = () => {
 
     const whatsappNumber = "254746495101"; 
     const text = encodeURIComponent(
-      `Hello Le'Lesan Resort,%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`
+      `Hello Le'Lesan Resort,Name: ${name} Email: ${email} Message: ${message}`
     );
 
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");

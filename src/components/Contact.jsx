@@ -1,7 +1,13 @@
-import React from "react";
+import SEO from "./SEO";
 
 const Contact = () => {
   return (
+    <>
+      <SEO
+        title="Contact Us | Le’Lesan Resort"
+        description="Find Le’Lesan Resort behind Chepkoyva Primary School, Kesses. Call 0746 495101 or reach out via our contact form."
+        url="https://lelesan-resort.vercel.app/#contact"
+      />
     <section id="contact" className="py-16 px-4 md:px-20 bg-green-50">
       <h2 className="text-3xl font-bold text-center mb-10 text-green-700">Contact Us</h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
@@ -40,6 +46,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 

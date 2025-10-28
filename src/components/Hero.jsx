@@ -1,8 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SEO from "../components/SEO";
 
 const Hero = () => {
   return (
+    <>
+      <SEO
+          title="Home | Le’Lesan Resort"
+          description="Discover Le’Lesan Resort — a paradise in Kesses offering romantic dining, thrilling adventures, and family-friendly activities."
+          url="https://lelesan-resort.vercel.app/"
+      />
+    
+  
     <section
       id="home"
       className="h-screen bg-[url('/images/children.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center text-white relative"
@@ -24,6 +33,7 @@ const Hero = () => {
         </a>
       </motion.div>
     </section>
+    </>
   );
 };
 
